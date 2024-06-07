@@ -1,0 +1,43 @@
+.navbar {
+  background-color: #042feb;
+  overflow: hidden;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-item {
+  padding: 14px 20px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 17px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.nav-item a {
+
+  color: #ffffff;
+  text-decoration: none;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+  }
+  40% {
+      transform: translateY(-20px);
+  }
+  60% {
+      transform: translateY(-10px);
+  }
+}
+
+.nav-item:hover {
+  animation: bounce 1.3s;
+  animation-delay: 0.3s;
+  background-color: #ffae00fd;
+}
